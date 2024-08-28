@@ -1,0 +1,231 @@
+* {}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(30, 30, 43);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    margin-inline: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: rgb(158, 158, 243);
+    border-bottom: 2px solid white;
+}
+
+.logo {
+    background-image: url(Image/20240812_212525.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 370px;
+    height: 40px;
+}
+
+@media only screen and (max-width:700px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+main {
+    font-family: Arial, sans-serif;
+    background-image: url("Image/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.overlay-text {
+    padding: 20px;
+}
+
+.overlay-text a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    border: 3px dotted rgb(0, 0, 0);
+    border-radius: 10px;
+    height: 40px;
+    width: 140px;
+    background-color: rgb(36, 36, 39);
+    padding: 5px 10px;
+}
+
+.overlay-text p {
+    margin-bottom: 50px;
+}
+
+.war {
+    margin: 50px;
+    background-color: rgba(0, 0, 0, 0.233);
+    padding: 20px;
+}
+
+section.one {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    border: 10px solid rgb(30, 30, 43);
+    padding-bottom: 10px;
+}
+
+section.one h2 {
+    font-size: 17px;
+}
+
+section.one h2 span.all {
+    font-size: 25px;
+    position: relative;
+    top: 5px;
+    color: rgb(3, 91, 3);
+}
+
+section.one h2 span.link {
+    font-size: 8px;
+    color: rgb(18, 18, 211);
+    position: relative;
+    top: 5px;
+}
+
+section.one img {
+    height: 20px;
+    background-color: black;
+    padding: 2px;
+    border-radius: 50%;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    margin: 10px;
+}
+
+/* hello */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px; /* Adjust the gap size as needed */
+    padding: 20px;
+  }
+  
+  .grid-item {
+    text-align: center;
+    border: 1px solid #000000;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+  }
+  
+  .grid-item h3 {
+    font-size: 25px;
+    margin: 15px 0;
+    color: #333;
+  }
+  
+  .grid-item a {
+    display: block;
+    margin: 10px 0;
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 10px;
+  }
+
+  #dow {
+    background-color: rgb(0, 255, 0);
+  }
+
+  #promo {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+  
+  #dow:hover {
+    background-color: rgb(255, 0, 230);
+    color: white;
+  }
+
+  #promo:hover {
+    background-color: rgb(0, 0, 255);
+    color: white;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 1200px) {
+    .grid-container {
+      grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* 1 column for mobile devices */
+    }
+  }
+
+  footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+  }
+
+
+  footer .a a {
+    padding: 10px;
+    color: rgb(125, 125, 238);
+  }
